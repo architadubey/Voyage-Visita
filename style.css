@@ -1,0 +1,281 @@
+/* --- HERO SECTION --- */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url('kerela.jpg') no-repeat center center/cover;
+  animation: slideshow 20s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background slideshow animation */
+@keyframes slideshow {
+  0% { background-image: url('D.jpg'); }
+  10% { background-image: url('kkerela.jpg'); }
+  25% { background-image: url('goa.jpg'); }
+  50% { background-image: url('mountain.jpg'); }
+  75% { background-image: url('rajasthan (2).jpg'); }
+
+}
+/* --- WEBSITE TITLE --- */
+.site-title {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  font-size: larger;
+}
+
+.site-title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fbfbfb;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* --- SEARCH BAR CONTAINER --- */
+.search-bar {
+  display: flex;
+  flex-direction: column;          /* stack text and input */
+  align-items: center;
+  justify-content: center;
+  width: 85vw;                     /* spans 85% of viewport width */
+  max-width: 1200px;               /* prevent it from being too wide on big screens */
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 50px 80px;
+  border-radius: 60px;
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.45);
+  margin: 0 auto;
+}
+
+
+
+/* --- TRAVEL EXPLORER TITLE --- */
+.search-bar h1 {
+  font-size: 5rem;               /* MUCH larger */
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 8px 8px 30px rgba(0, 0, 0, 0.9);
+  margin: 0;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+
+/* --- SUBTITLE --- */
+.search-bar p {
+  font-size: 6 rem;
+  color: #f0f0f0;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* --- SEARCH INPUT --- */
+.search-bar input {
+  width: 80%;                      /* much longer horizontally */
+  max-width: 800px;                /* restricts on large screens */
+  height: 70px;                    /* slightly taller */
+  font-size: 1.3rem;
+  padding: 0 30px;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+
+.search-bar input:focus {
+  transform: scale(1.05);
+  background-color: white;
+}
+
+
+
+/* ---------- Top Rated Experiences Section ---------- */
+.experiences {
+  padding: 50px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.experiences h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Bigger image grid with ~1 cm gap */
+.experiences .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            
+  justify-items: center;
+  padding: 0 20px;
+}
+
+/* Each image block */
+.place {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.place:hover {
+  transform: scale(1.03);
+}
+
+/* Large, borderless, edge-to-edge images */
+.place img {
+  width: 100%;
+  height: 240px;           /* increase for taller look */
+  object-fit: cover;       /* crops nicely */
+  border: none;
+  display: block;
+  border-radius: 0;        /* remove rounded corners */
+  box-shadow: none;        /* remove shadows/borders */
+  margin: 0;
+}
+
+/* Destination name overlay */
+.place p {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.2);
+  padding: 5px 0;
+}
+
+
+/* Destination names below images */
+.place p {
+  background: #fff;
+  margin: 0;
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Footer with blue line - 10% height */
+footer {
+  height: 10vh;
+  background-color: #007BFF; /* Blue color */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Link inside footer */
+footer a {
+  color: white;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  color: #cce5ff;
+}
+
+/* Retain styles for images and grid within experiences */
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+footer {
+  background: #0078ff;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  font-size: 5rem;     /* larger text */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+.footer-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
+/* 📝 Feedback Page Styling */
+.feedback-container {
+  max-width: 600px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feedback-container h1 {
+  color: #0078ff;
+  margin-bottom: 10px;
+}
+
+.feedback-container p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.feedback-form button {
+  background: #0078ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.feedback-form button:hover {
+  background: #005ec4;
+}

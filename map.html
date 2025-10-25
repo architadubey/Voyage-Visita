@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Map | Travel Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🌍 Travel Explorer</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="map.html" class="active">Explore Map</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="map-section">
+    <h2>Click a Region to Explore</h2>
+    <img src="images/india-map.jpg" usemap="#india-map" width="800" alt="Map of India">
+
+    <map name="india-map">
+      <area shape="poly" coords="129,33,140,131,261,228,225,43" 
+            href="destinations.html#north" alt="North India" title="North India">
+      <area shape="poly" coords="129,135,266,236,236,324,106,320,49,222" 
+            href="destinations.html#west" alt="West India" title="West India">
+      <area shape="poly" coords="220,385,192,308,279,328,173,499" 
+            href="destinations.html#south" alt="South India" title="South India">
+      <area shape="poly" coords="277,185,465,159,413,258,261,306" 
+            href="destinations.html#east" alt="East India" title="East India">
+    </map>
+  </section>
+
+  <footer>
+    <p>© 2025 Travel Explorer | Made with ❤️ in India</p>
+  </footer>
+</body>
+</html>

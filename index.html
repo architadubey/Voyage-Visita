@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderSphere | Travel Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="slideshow.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HERO SECTION WITH SLIDESHOW -->
+  <section class="hero" id="hero">
+    <div class="overlay">
+
+      <!-- WEBSITE TITLE -->
+      <div class="site-title">
+      </div>
+
+      <!-- SEARCH BAR SECTION -->
+      <div class="search-bar">
+        <h1>Voyage Visita!</h1>
+        
+        <input list="destinations" id="search" placeholder="Search destinations...">
+
+        <datalist id="destinations">
+          <option value="Ladakh">
+          <option value="Varanasi">
+          <option value="Amritsar">
+          <option value="Coorg">
+          <option value="Udaipur">
+          <option value="Jodhpur">
+          <option value="Hampi">
+          <option value="Darjeeling">
+          <option value="Andaman Nicobar">
+          <option value="Mumbai">
+        </datalist>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOP RATED EXPERIENCES -->
+  <section class="experiences">
+    <h2>Top Rated Experiences</h2>
+    <div class="grid">
+      <div class="place" onclick="showInfo('delhi')">
+        <img src="delhi.jpeg" alt="Delhi">
+        <p>Delhi</p>
+      </div>
+      <div class="place" onclick="showInfo('agra')">
+        <img src="agra.jpeg" alt="Agra">
+        <p>Agra</p>
+      </div>
+      <div class="place" onclick="showInfo('kerala')">
+        <img src="kerelae.jpg" alt="Kerala">
+        <p>Kerala</p>
+      </div>
+      <div class="place" onclick="showInfo('jaipur')">
+        <img src="jaipur.jpeg" alt="Jaipur">
+        <p>Jaipur</p>
+      </div>
+      <div class="place" onclick="showInfo('goa')">
+        <img src="Goa.jpeg" alt="Goa">
+        <p>Goa</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO SECTION (appears when clicked) -->
+  <section id="info-section" class="info-section hidden">
+    <div id="info-content"></div>
+  </section>
+
+<!-- Footer -->
+<footer>
+  <p>
+    © 2025 VoyageVisita |
+    <a href="contact.html" class="footer-link" font-size="100px">Contact Us</a> |
+    <a href="feedback.html" class="footer-link">Feedback</a>
+  </p>
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
